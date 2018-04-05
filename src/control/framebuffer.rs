@@ -20,7 +20,7 @@ use ffi;
 /// [`framebuffer::Info`]: Info.t.html
 /// [`ResourceIds::framebuffers`]: ResourceIds.t.html#method.framebuffers
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq, From, Into)]
-pub struct Handle(control::RawHandle);
+pub struct Handle(pub control::RawHandle);
 impl ResourceHandle for Handle {}
 
 /// A [`ResourceInfo`] for a framebuffer.

@@ -19,7 +19,7 @@ use result::*;
 /// [`connector::Info`]: Info.t.html
 /// [`ResourceHandles::connectors`]: ../ResourceHandles.t.html#method.connectors
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq, From, Into)]
-pub struct Handle(control::RawHandle);
+pub struct Handle(pub control::RawHandle);
 impl ResourceHandle for Handle {}
 
 /// A [`ResourceInfo`] for a connector.

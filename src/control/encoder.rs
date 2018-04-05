@@ -19,7 +19,7 @@ use ffi;
 /// [`encoder::Info`]: Info.t.html
 /// [`ResourceHandles::encoders`]: ResourceHandles.t.html#method.encoders
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq, From, Into)]
-pub struct Handle(control::RawHandle);
+pub struct Handle(pub control::RawHandle);
 impl ResourceHandle for Handle {}
 
 /// A [`ResourceInfo`] for an encoder.

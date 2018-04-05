@@ -13,7 +13,7 @@ pub type RawValue = u64;
 
 /// A `ResourceHandle` to a property.
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq, From, Into)]
-pub struct Handle(control::RawHandle);
+pub struct Handle(pub control::RawHandle);
 impl ResourceHandle for Handle {}
 
 #[derive(Debug, Clone, Hash, PartialEq, Eq)]

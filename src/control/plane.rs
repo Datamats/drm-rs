@@ -19,7 +19,7 @@ use {iRect, uRect};
 /// [`plane::Info`]: Info.t.html
 /// [`PlaneResourceHandles::planes`]: PlaneResourceHandles.t.html#method.planes
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq, From, Into)]
-pub struct Handle(control::RawHandle);
+pub struct Handle(pub control::RawHandle);
 impl ResourceHandle for Handle {}
 
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
